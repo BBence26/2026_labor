@@ -1,34 +1,33 @@
-#Ez a második labor feladatait tartalmazza
+# Ez a második labor feladatait tartalmazza
 import harmadik
-#felh_kora=int(15.45)
-felh_kora=int(input("Hány éves vagy: " ))
-felh_kora+=1
 
-#felh_neve='Bence'
-felh_neve=input("Kérem a nevet: ")
-#felh_neve*=2
+harmadik.lotto()
 
-metszet=felh_neve[2]
-metszet2=felh_neve[2:5]
-metszet3=felh_neve[:-5]
-
-#print('Szia', felh_neve+'!', felh_kora,metszet3)
-
-jegyek=[2,5,4,3]
-jegyek+=[5]
+felh_kora = int(15.65)
+felh_kora = int(input("Hány éves vagy: "))
+felh_kora += 19
+felh_neve = input('Kérem a nevet:')
+felh_neve = "Erik"
+felh_neve *= 2
+metszet = felh_neve[:-5]
+jegyek = [2, 5, 4, 3]
+jegyek += [5]
 del jegyek[0]
-print('Szia', felh_neve+'!', jegyek) #jegyek[2]
-
-halmaz={'magyar','angol','orosz',3}
-print(halmaz)
-
-hallgato={"nev":'Jolán',"kor: ": 19}
+halmaz = {'magyar', 'angol', 'orosz', 3}
+hallgato = {"nev": 'Jolán', "kor": 19}
 print(hallgato["nev"])
-
-print (hallgato["nev"])
 print(halmaz)
 print('Szia', felh_neve, "!", jegyek)
-print('Jó', 'reggelt', 'DUE!', end='\n\n', sep='-')
-print('Új sor')
 
+print('Jó', 'reggelt', 'DUE!',end='\n\n', sep='-')
+print('Több soros\n'
+      'kiírás\n'
+      '!!!!')
 
+print(f'Szia {felh_neve}! \n{jegyek}')
+print(f'Kora: {felh_kora: .2f}')
+
+print(felh_neve.rjust(30, '.'))
+print(felh_neve.ljust(30,'.'))
+print(felh_neve.center(30, '.'))
+print(str(felh_kora).center(30))
