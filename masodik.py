@@ -1,5 +1,5 @@
 #Ez a második labor feladatait tartalmazza
-
+import harmadik
 #felh_kora=int(15.45)
 felh_kora=int(input("Hány éves vagy: " ))
 felh_kora+=1
@@ -25,5 +25,10 @@ print(halmaz)
 hallgato={"nev":'Jolán',"kor: ": 19}
 print(hallgato["nev"])
 
+print (hallgato["nev"])
+print(halmaz)
+print('Szia', felh_neve, "!", jegyek)
+print('Jó', 'reggelt', 'DUE!', end='\n\n', sep='-')
+print('Új sor')
 
 
